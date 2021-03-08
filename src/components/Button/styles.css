@@ -1,0 +1,45 @@
+.gotchi--button,
+.gotchi--info-button {
+  background-color: #7318F4;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 2rem;
+  position: relative;
+  border: none;
+  z-index: 1;
+}
+
+.gotchi--button {
+  border-bottom: 0.6rem solid #4C1F7C;
+  border-right: 0.6rem solid #4C1F7C;
+  width: 12rem;
+  height: 4.4rem;
+}
+.gotchi--info-button {
+  height: 2rem;
+  width: 2rem;
+  font-size: 1.8rem;
+  background-color: #FA34F2;
+}
+
+.gotchi--button-wrapper {
+  position: relative;
+}
+.gotchi--button-wrapper:after {
+  content: '';
+  background-color: black;
+  position: absolute;
+  top: -0.4rem;
+  bottom: -0.4rem;
+  width: 100%;
+  left: 0;
+}
+.gotchi--button-wrapper:before {
+  content: '';
+  background-color: black;
+  position: absolute;
+  left: -0.4rem;
+  right: -0.4rem;
+  height: 100%;
+}

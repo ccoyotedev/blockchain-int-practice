@@ -1,0 +1,51 @@
+.gotchi--img-container {
+  width: 22rem;
+  height: 22rem;
+}
+
+.gotchi--img-container .gotchi-bg {
+  display: none;
+}
+
+.gotchi-handsDownClosed,
+.gotchi-handsUp,
+.gotchi-handsDownOpen,
+.gotchi-handsDownClosed,
+.gotchi-body,
+.gotchi-eyeColor,
+.gotchi-collateral,
+.gotchi-cheek,
+.gotchi-primary-mouth,
+.gotchi-wearable {
+  animation-name: down;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+}
+
+.gotchi-shadow {
+  animation-name: up;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps(2);
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-0.2rem);
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(0.2rem);
+  }
+}
