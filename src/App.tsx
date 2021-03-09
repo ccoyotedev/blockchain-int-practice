@@ -27,7 +27,6 @@ function App() {
     const gotchis = await aaveContract.methods.allAavegotchisOfOwner(accounts[0]).call();
     const updatedGotchis: IGotchi[] = gotchis.map((gotchi: any) => {
       const numericTraits = gotchi["modifiedNumericTraits"] as string[];
-
       return (
         {
           tokenId: parseInt(gotchi["tokenId"]),
@@ -75,7 +74,7 @@ function App() {
         {selectedGotchi === undefined
           ? <h1>Loading</h1>
           : viewDetails
-          ? <DetailsPanel gotchi={selectedGotchi} /> 
+          ? <DetailsPanel gotchi={selectedGotchi} closePanel={() => setViewDetails(false)} /> 
           : 
             <>
               <div className="full-width">

@@ -9,7 +9,7 @@ export interface IGotchi {
     brainSize: number;
     eyeShape: number;
     eyeColor: number;
-  }[];
+  };
   kinship: number;
   lastInteracted: number;
   level: number;

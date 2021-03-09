@@ -25,3 +25,13 @@ export const InfoButton = (props: { onClick: () => void }) => {
     </div>
   )
 }
+
+export const CloseButton = (props: { onClick: () => void }) => {
+  return (
+    <div className="gotchi--button-wrapper">
+      <button className="gotchi--info-button" onClick={props.onClick}>
+        X
+      </button>
+    </div>
+  )
+}
